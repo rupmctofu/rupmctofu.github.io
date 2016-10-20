@@ -1,0 +1,920 @@
+@import "_colores";
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#dharani {
+    @extend html;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+}
+
+.section {
+    @extend html;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+
+
+/* NAV ---------------------------------------*/
+
+nav {
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.nav-item {
+    color: $tierraclara;
+}
+
+
+.vdivier {
+    height: 30px;
+    width: 1px;
+    margin: 0 10px 0 10px;
+    background-color: $tierraclara;
+}
+
+/* LANDING ---------------------------------------*/
+
+.landing {
+    background: $c1 url(../img/bg-landing-high2.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: $c1;
+}
+
+.cont-landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+}
+
+.landing-logo {
+    width: 90%;
+    max-width: 400px;
+    animation: FadeIn 2s ease-in;
+}
+
+.landing-slogan {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .9);
+    animation: FadeIn 3s ease-in;
+}
+
+
+/* TIENDA ---------------------------------------*/
+
+.tienda {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-tienda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh !important;
+    width: 100%;
+}
+
+
+/* BIENVENIDO ---------------------------------------*/
+
+.bienvenido {
+    @include gradient;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: -1;
+}
+
+.cont-bienvenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.h1-bienvenido {
+    color: $tierra;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+
+.contigo {
+    color: $tierra;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.servicios-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.servicio-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10%;
+    width: 230px;
+}
+
+.servicio-block:hover {
+    background-color: rgba($tierraclara, .3);
+}
+
+.bubble-alimentacion {
+    background: url(../img/tomato.jpg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+    margin-top: 6px;
+}
+
+.bubble-higiene {
+    background: url(../img/cosmetic.jpg) no-repeat center;
+    background-size: cover;
+    background-position: left;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+}
+
+.bubble-herboristeria {
+    background: url(../img/manzanilla.jpg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+}
+
+.bubble-cocina {
+    background: url(../img/cooking.jpg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+}
+
+.bubble-terapias {
+    background: url(../img/lotus.jpg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+}
+
+.bubble-alimentacion:hover,
+.bubble-higiene:hover,
+.bubble-herboristeria:hover,
+.bubble-cocina:hover,
+.bubble-terapias:hover {
+    box-shadow: 0px 0px 10px 3px rgba($tierra, .4);
+    transform: scale(1.1, 1.1);
+}
+
+.servicio-title {
+    color: $tierra;
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bienvenido-footer {
+    width: 75%;
+    max-width: 1300px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: $tierraclara;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.slide {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    ;
+}
+
+
+/* Servicio ---------------------------------------*/
+
+.servicio {
+    @include gradient;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: -1;
+}
+
+.cont-serv {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+    min-width: 1000px;
+}
+
+.service-top {
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.service-icon {
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.service-description {
+    margin-left: 20px;
+    width: 50%;
+    min-width: 500px;
+}
+
+.h1-service-title {
+    color: $tierra;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+
+.h2-service-subtitle {
+    margin-top: 20px;
+    color: $tierra;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 24px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.img-noodles {
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    background: url(../img/noodles2.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.img-shampoo {
+    background: url(../img/shampoo.png) no-repeat;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    background-size: contain;
+    background-position: right;
+}
+
+.img-herboriseria {
+    background: url(../img/flower.png) no-repeat;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    background-size: contain;
+    background-position: right;
+}
+
+.img-tabla {
+    background: url(../img/tabla.png) no-repeat;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    background-size: contain;
+    background-position: right;
+}
+
+.img-arbol {
+    background: url(../img/bg-tree.png) no-repeat;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    background-size: contain;
+    background-position: right;
+}
+
+.service-bottom-owl {
+    height: auto;
+    display: flex;
+    width: 800px !important;
+    margin-top: 50px;
+}
+
+
+/* Owl-Carousel -------------------------------- */
+
+.owl-card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+    color: $tierra;
+}
+
+.owl-card-img {
+    width: 100%;
+    height: 65%;
+    border-radius: 5px 5px 0 0;
+}
+
+.owl-card-label {
+    background-color: $tierraclara;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 250px;
+    height: 300px;
+}
+
+.card {
+    width: 270px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px rgba($tierra, .2);
+    color: $tierra;
+    margin: 20px 5px 0 5px;
+    transition: .4s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 3px rgba($tierra, .4);
+    transform: scale(1.02);
+}
+
+
+.card-img {
+    width: 100%;
+    height: 65%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-label {
+    background-color: $tierraclara;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-title {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.label-info {
+    font-weight: 100;
+    font-size: 14px;
+    font-style: italic;
+    width: 90%;
+    text-align: center;
+}
+
+.dots {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: -5px 0;
+}
+
+.service-bottom {
+    margin-top: 20px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+}
+
+
+/* Clases de cocina ---------------------------------------*/
+
+.h1-cocina-title {
+    color: $tierra;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 60px;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cocina-bottom {
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 900px;
+}
+.cont-cirulos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cocina-circle {
+    width: 230px;
+    height: 230px;
+    background-color: $tierraclara;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $tierra;
+    padding: 5px;
+    margin: 10px;
+}
+
+.boton {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: $tierra;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+
+}
+.boton:hover {
+    background-color: $tierraclara;
+}
+
+/* Proveedores ---------------------------------------*/
+
+.cont-proveedores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.proveedores-header {
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.proveedores-bottom {
+    width: 90vw;
+    max-width: 1400px;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-provee {
+    display: flex;
+    object-fit: contain;
+    object-position: center;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.logo-provee:hover {
+    opacity: .6;
+}
+
+
+/* CONTACTO ---------------------------------------*/
+
+.cont-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.contacto-top {
+    max-width: 600px;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacto-bottom {
+    width: 100%;
+    height: 40%;
+}
+
+.mapa-section {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    bottom: 0px;
+}
+
+.mailto {
+    color: $tierra;
+}
+
+.mailto:hover {
+    color: $tierraclara;
+}
+
+
+
+/* ARTICULO ---------------------------------------*/
+
+
+#articulo {
+    @extend html;
+    font-family: Open Sans, sans-serif;
+}
+
+.container-articulo {
+    @include gradient;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.articulo-header-panes {
+    background: url(../img/panes.jpg) no-repeat left;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-aceite {
+    background: url(../img/aceite.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-algas {
+    background: url(../img/sushi.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-bebidas {
+    background: url(../img/multicereal.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-miel {
+    background: url(../img/miel.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-singluten {
+    background: url(../img/singluten.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+.articulo-header-superalimentos {
+    background: url(../img/superalimentos.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+.articulo-header-cosmetica {
+    background: url(../img/header-cosmetica.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-higiene {
+    background: url(../img/header-higiene.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-limpieza {
+    background: url(../img/header-limpieza.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-floresbach {
+    background: url(../img/flowers-background.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-andina {
+    background: url(../img/bg-andina.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-header-energia {
+    background: url(../img/bg-energia.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.articulo-icon {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.articulo-title {
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: -1px;
+    color: $tierra;
+    text-align: center;
+}
+
+.articulo-subtitle {
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: $tierra;
+}
+
+.articulo-dots {
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: $tierra;
+    margin: -20px;
+}
+
+.articulo-parrafo {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
+    font-style: italic;
+    color: $tierra;
+    line-height: 1.5;
+}
+
+.articulo-todo {
+    width: 85%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo-samples-title {
+    min-width: 200px;
+    margin: 0 10px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: $tierra;
+    line-height: 1.5;
+}
+
+.articulo-samples-wrap {
+    height: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.art-sample-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.art-sample-block {
+    height: auto;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.art-sample-title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: $tierra;
+    margin-top: 15px;
+}
+
+
+
+.articulo-divider {
+    width: 35%;
+    height: 1px;
+    background: $tierra;
+}
+
+.articulo-samples-title-block {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-slider, my-slider li {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.foto-slider {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

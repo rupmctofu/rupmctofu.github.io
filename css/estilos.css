@@ -1,0 +1,909 @@
+@keyframes FadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* line 13, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 19, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+html, #dharani, .section, #articulo {
+  height: 100%;
+  min-height: 100%;
+  width: 100vw;
+  overflow-x: hidden; }
+
+/* line 26, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+#dharani {
+  font-family: Open Sans, sans-serif;
+  display: flex; }
+
+/* line 36, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+a {
+  text-decoration: none;
+  cursor: pointer !important; }
+
+/* NAV ---------------------------------------*/
+/* line 45, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+nav {
+  position: absolute;
+  top: 93%;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20; }
+
+/* line 56, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.nav-item {
+  color: #d2d0be; }
+
+/* line 61, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.vdivier {
+  height: 30px;
+  width: 1px;
+  margin: 0 10px 0 10px;
+  background-color: #d2d0be; }
+
+/* LANDING ---------------------------------------*/
+/* line 70, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.landing {
+  background: #53806c url(../img/bg-landing-high2.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 79, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.titulo {
+  color: #53806c; }
+
+/* line 83, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%; }
+
+/* line 92, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.landing-logo {
+  width: 90%;
+  max-width: 400px;
+  animation: FadeIn 2s ease-in; }
+
+/* line 98, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.landing-slogan {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  animation: FadeIn 3s ease-in; }
+
+/* TIENDA ---------------------------------------*/
+/* line 111, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.tienda {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 119, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-tienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh !important;
+  width: 100%; }
+
+/* BIENVENIDO ---------------------------------------*/
+/* line 131, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bienvenido {
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2d0be), color-stop(19%, rgba(255, 255, 255, 0.81)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d0be', endColorstr='#ffffff', GradientType=0);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: -1; }
+
+/* line 141, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-bienvenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; }
+
+/* line 150, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.h1-bienvenido {
+  color: #807c66;
+  font-weight: 500;
+  font-size: 60px;
+  letter-spacing: -2px; }
+
+/* line 157, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.contigo {
+  color: #807c66;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 30px; }
+
+/* line 167, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.servicios-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 1300px; }
+
+/* line 176, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.servicio-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10%;
+  width: 230px; }
+
+/* line 187, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.servicio-block:hover {
+  background-color: rgba(210, 208, 190, 0.3); }
+
+/* line 191, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-alimentacion {
+  background: url(../img/tomato.jpg) no-repeat center;
+  background-size: cover;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2);
+  margin-top: 6px; }
+
+/* line 202, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-higiene {
+  background: url(../img/cosmetic.jpg) no-repeat center;
+  background-size: cover;
+  background-position: left;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2); }
+
+/* line 213, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-herboristeria {
+  background: url(../img/manzanilla.jpg) no-repeat center;
+  background-size: cover;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2); }
+
+/* line 223, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-cocina {
+  background: url(../img/cooking.jpg) no-repeat center;
+  background-size: cover;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2); }
+
+/* line 233, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-terapias {
+  background: url(../img/lotus.jpg) no-repeat center;
+  background-size: cover;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  transition: .4s;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2); }
+
+/* line 247, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bubble-alimentacion:hover,
+.bubble-higiene:hover,
+.bubble-herboristeria:hover,
+.bubble-cocina:hover,
+.bubble-terapias:hover {
+  box-shadow: 0px 0px 10px 3px rgba(128, 124, 102, 0.4);
+  transform: scale(1.1, 1.1); }
+
+/* line 252, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.servicio-title {
+  color: #807c66;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/* line 260, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.bienvenido-footer {
+  width: 75%;
+  max-width: 1300px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 20px;
+  background-color: #d2d0be;
+  border-radius: 10px;
+  padding: 15px; }
+
+/* line 272, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.slide {
+  height: 100%;
+  min-height: 100%;
+  width: 100%; }
+
+/* Servicio ---------------------------------------*/
+/* line 282, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.servicio {
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2d0be), color-stop(19%, rgba(255, 255, 255, 0.81)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d0be', endColorstr='#ffffff', GradientType=0);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: -1; }
+
+/* line 292, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-serv {
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 70%;
+  min-width: 1000px; }
+
+/* line 303, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.service-top {
+  height: auto;
+  display: flex;
+  align-items: flex-start; }
+
+/* line 309, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.service-icon {
+  min-width: 150px;
+  min-height: 150px; }
+
+/* line 314, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.service-description {
+  margin-left: 20px;
+  width: 50%;
+  min-width: 500px; }
+
+/* line 320, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.h1-service-title {
+  color: #807c66;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 60px;
+  letter-spacing: -2px; }
+
+/* line 328, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.h2-service-subtitle {
+  margin-top: 20px;
+  color: #807c66;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+  font-size: 22px;
+  letter-spacing: 1px; }
+
+/* line 338, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.img-noodles {
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  background: url(../img/noodles2.png) no-repeat;
+  background-size: contain;
+  background-position: right; }
+
+/* line 348, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.img-shampoo {
+  background: url(../img/shampoo.png) no-repeat;
+  height: 100%;
+  width: 100vw;
+  right: 0;
+  background-size: contain;
+  background-position: right; }
+
+/* line 357, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.img-herboriseria {
+  background: url(../img/flower.png) no-repeat;
+  height: 100%;
+  width: 100vw;
+  right: 0;
+  background-size: contain;
+  background-position: right; }
+
+/* line 366, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.img-tabla {
+  background: url(../img/tabla.png) no-repeat;
+  height: 100%;
+  width: 100vw;
+  right: 0;
+  background-size: contain;
+  background-position: right; }
+
+/* line 375, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.img-arbol {
+  background: url(../img/bg-tree.png) no-repeat;
+  height: 100%;
+  width: 100vw;
+  right: 0;
+  background-size: contain;
+  background-position: right; }
+
+/* line 384, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.service-bottom-owl {
+  height: auto;
+  display: flex;
+  width: 800px !important;
+  margin-top: 50px; }
+
+/* Owl-Carousel -------------------------------- */
+/* line 394, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.owl-card {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2);
+  color: #807c66; }
+
+/* line 407, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.owl-card-img {
+  width: 100%;
+  height: 65%;
+  border-radius: 5px 5px 0 0; }
+
+/* line 413, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.owl-card-label {
+  background-color: #d2d0be;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 423, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.item {
+  width: 250px;
+  height: 300px; }
+
+/* line 428, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.card {
+  width: 270px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px rgba(128, 124, 102, 0.2);
+  color: #807c66;
+  margin: 20px 5px 0 5px;
+  transition: .4s; }
+
+/* line 443, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.card:hover {
+  box-shadow: 0px 0px 10px 3px rgba(128, 124, 102, 0.4);
+  transform: scale(1.02); }
+
+/* line 449, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.card-img {
+  width: 100%;
+  height: 65%;
+  border-radius: 5px 5px 0 0; }
+
+/* line 455, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.card-label {
+  background-color: #d2d0be;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 465, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.label-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px; }
+
+/* line 471, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.label-info {
+  font-weight: 100;
+  font-size: 14px;
+  font-style: italic;
+  width: 90%;
+  text-align: center; }
+
+/* line 479, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.dots {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin: -5px 0; }
+
+/* line 486, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.service-bottom {
+  margin-top: 20px;
+  height: 330px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  max-width: 900px; }
+
+/* Clases de cocina ---------------------------------------*/
+/* line 499, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.h1-cocina-title {
+  color: #807c66;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 60px;
+  letter-spacing: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* line 510, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cocina-bottom {
+  margin-top: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  max-width: 900px; }
+
+/* line 519, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-cirulos {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/* line 528, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cocina-circle {
+  width: 230px;
+  height: 230px;
+  background-color: #d2d0be;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #807c66;
+  padding: 5px;
+  margin: 10px; }
+
+/* line 542, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.boton {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #807c66;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 20px; }
+
+/* line 556, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.boton:hover {
+  background-color: #d2d0be; }
+
+/* Proveedores ---------------------------------------*/
+/* line 562, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-proveedores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; }
+
+/* line 572, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.proveedores-header {
+  max-width: 600px;
+  width: 90%;
+  text-align: center; }
+
+/* line 578, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.proveedores-bottom {
+  width: 90vw;
+  max-width: 1400px;
+  height: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+/* line 590, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.logo-provee {
+  display: flex;
+  object-fit: contain;
+  object-position: center;
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px; }
+
+/* line 600, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.logo-provee:hover {
+  opacity: .6; }
+
+/* CONTACTO ---------------------------------------*/
+/* line 607, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.cont-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; }
+
+/* line 616, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.contacto-top {
+  max-width: 600px;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+/* line 627, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.contacto-bottom {
+  width: 100%;
+  height: 40%; }
+
+/* line 632, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.mapa-section {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  bottom: 0px; }
+
+/* line 639, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.mailto {
+  color: #807c66; }
+
+/* line 643, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.mailto:hover {
+  color: #d2d0be; }
+
+/* ARTICULO ---------------------------------------*/
+/* line 652, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+#articulo {
+  font-family: Open Sans, sans-serif; }
+
+/* line 657, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.container-articulo {
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2d0be), color-stop(19%, rgba(255, 255, 255, 0.81)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(210, 208, 190, 0.4) 0%, rgba(255, 255, 255, 0.81) 19%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d0be', endColorstr='#ffffff', GradientType=0);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  padding-bottom: 100px; }
+
+/* line 668, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-panes {
+  background: url(../img/panes.jpg) no-repeat left;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 678, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-aceite {
+  background: url(../img/aceite.jpg) no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 688, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-algas {
+  background: url(../img/sushi.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 698, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-bebidas {
+  background: url(../img/multicereal.jpg) no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 708, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-miel {
+  background: url(../img/miel.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 718, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-singluten {
+  background: url(../img/singluten.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 727, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-superalimentos {
+  background: url(../img/superalimentos.jpg) no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 736, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-cosmetica {
+  background: url(../img/header-cosmetica.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 746, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-higiene {
+  background: url(../img/header-higiene.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 756, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-limpieza {
+  background: url(../img/header-limpieza.jpg) no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 766, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-floresbach {
+  background: url(../img/flowers-background.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 776, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-andina {
+  background: url(../img/bg-andina.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 786, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-header-energia {
+  background: url(../img/bg-energia.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  min-height: 300px;
+  top: 0;
+  left: 0; }
+
+/* line 796, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-icon {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px; }
+
+/* line 802, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-title {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: -1px;
+  color: #807c66;
+  text-align: center; }
+
+/* line 810, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-subtitle {
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #807c66; }
+
+/* line 817, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-dots {
+  font-weight: 600;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #807c66;
+  margin: -20px; }
+
+/* line 825, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-parrafo {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: justify;
+  text-align-last: center;
+  font-style: italic;
+  color: #807c66;
+  line-height: 1.5; }
+
+/* line 836, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-todo {
+  width: 85%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 844, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-samples-title {
+  min-width: 200px;
+  margin: 0 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  color: #807c66;
+  line-height: 1.5; }
+
+/* line 855, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-samples-wrap {
+  height: auto;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/* line 867, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.art-sample-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+
+/* line 873, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.art-sample-block {
+  height: auto;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; }
+
+/* line 883, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.art-sample-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+  color: #807c66;
+  margin-top: 15px; }
+
+/* line 894, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-divider {
+  width: 35%;
+  height: 1px;
+  background: #807c66; }
+
+/* line 900, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.articulo-samples-title-block {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 910, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.my-slider, my-slider li {
+  height: 100% !important;
+  width: 100% !important; }
+
+/* line 915, /Users/rupmctofu/MEGA/Dharani/web3/css/estilos.scss */
+.foto-slider {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
+
+/*# sourceMappingURL=estilos.css.map */
